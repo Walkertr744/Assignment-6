@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triviabook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Triviabook</h1>
+    <p>Test your knowledge, one question at a time!</p>
+</header>
+
+<main>
+    <section id="trivia-section">
+        <h2>Play Trivia!</h2>
+
+        <label for="topic-select">Choose a Topic:</label>
+        <select id="topic-select">
+            <option value="">All Topics</option>
+        </select>
+
+        <button id="get-question-btn">Get Random Question</button>
+
+        <div id="question-container">
+            <p id="question-text">Click the button to get started!</p>
+        </div>
+
+        <input type="text" id="answer-input" placeholder="Enter your answer">
+
+        <button id="submit-answer-btn">Check Answer</button>
+
+        <p id="answer-feedback"></p>
+    </section>
+
+
+    
+</main>
+    
+</body>
+</html>
