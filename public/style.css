@@ -1,0 +1,202 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #10121b;
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #a8a9be;
+    font-size: 1.1rem;
+}
+
+/* Main content */
+
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* Trivia card */
+
+#trivia-section {
+    background: #1c1e2b;
+    border: 1px solid #323447;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+#trivia-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #c4c5d5;
+    margin-bottom: 10px;
+}
+
+/* Input fields */
+
+select,
+input {
+    width: 100%;
+    box-sizing: border-box;
+    background: #252735;
+    color: #ffffff;
+    border: 1px solid #414357;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus,
+input:focus {
+    border-color: #8b83ff;
+    box-shadow: 0 0 0 3px rgba(139, 131, 255, 0.15);
+}
+
+input::placeholder {
+    color: #888a9f;
+}
+
+/* Buttons */
+
+button {
+    background: #7770eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 22px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #918bff;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Random question button */
+
+#get-question-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Question display */
+
+#question-container {
+    background: #252735;
+    border: 1px solid #414357;
+    border-radius: 14px;
+    padding: 30px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#question-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Answer section */
+
+#answer-input {
+    margin-bottom: 15px;
+}
+
+#submit-answer-btn {
+    width: 100%;
+}
+
+/* Feedback */
+
+#answer-feedback {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    min-height: 25px;
+}
+
+/* Add Question Section */
+
+#add-question-section {
+    background: #1c1e2b;
+    border: 1px solid #323447;
+    border-radius: 20px;
+    padding: 35px;
+    margin-top: 30px;
+}
+
+#add-question-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#add-question-section > p {
+    color: #a8a9be;
+    margin-bottom: 25px;
+}
+
+#add-question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#add-question-form label {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#add-question-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#add-question-feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}

@@ -8,36 +8,62 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-    <h1>Triviabook</h1>
-    <p>Test your knowledge, one question at a time!</p>
-</header>
+    <header> <!--Creates the header section at the top of the webpage-->
+        <h1>Triviabook</h1> <!--Displays the main heading of the webpage-->
+        <p>Test your knowledge, one question at a time!</p> <!-- Displays a tagline under the heading-->
+    </header> <!--Ends the header section-->
 
-<main>
-    <section id="trivia-section">
-        <h2>Play Trivia!</h2>
+<main> <!--Contains the main content of the webpage-->
+    <section id="trivia-section"> <!--Houses the elements used to play the trivia game-->
+        <h2>Play Trivia!</h2> <!--Heading for the trivia game-->
 
-        <label for="topic-select">Choose a Topic:</label>
-        <select id="topic-select">
-            <option value="">All Topics</option>
+        <label for="topic-select">Choose a Topic:</label> <!--Labels teh topic dropwdown using its ID-->
+        <select id="topic-select"> <!--Creates a dropdown the js will fill with topics-->
+            <option value="">All Topics</option> <!--Provides an option with an empty value for question from all topics-->
+        </select> <!--Ends the dropdown-->
+
+        <button id="get-question-btn">Get Random Question</button> <!--Creates the button js will use to request a question-->
+
+        <div id="question-container"> <!--Creates a container to display the trivia question-->
+            <p id="question-text">Click the button to get started!</p> <!--Gives intitial instructions and is updated with the fetched question-->
+        </div> <!--Ends the question container-->
+
+        <input type="text" id="answer-input" placeholder="Enter your answer"> <!--Creates a text field for user answers-->
+
+        <button id="submit-answer-btn">Check Answer</button> <!--Creates a button for submitting user answers-->
+
+        <p id="answer-feedback"></p> <!--Initially empty area for correct or incorrect answer feedback-->
+    </section> <!--Ends the trivia game section-->
+
+    <section id="add-question-section"> <!--Houses the elements needed to add a new trivia question-->
+    <h2>Add Your Own Question</h2> <!--Heading for the add-question section-->
+    <p>Have a trivia question in mind? Add it to the collection!</p> <!--Explains what the form is for-->
+
+    <form id="add-question-form"> <!--Creates a form for js to handle when a new question is submitted-->
+        <label for="new-topic">Topic</label> <!--Labels the input for the trivia questions topic-->
+        <input type="text" id="new-topic" placeholder="e.g. history" required> <!--Allows the user to enter a topic-->
+
+        <label for="new-question">Question</label> <!--Labels the input for the trivia question-->
+        <input type="text" id="new-question" placeholder="Enter your trivia question" required> <!--Allows the user to enter a question-->
+
+        <label for="new-answer">Answer</label><!--Labels the input for the trivia questions answer-->
+        <input type="text" id="new-answer" placeholder="Enter the correct answer" required> <!--Allows the user to enter the questions answer-->
+
+        <label for="new-difficulty">Difficulty</label> <!--Lables the dropdown for choosing the questions difficulty-->
+        <select id="new-difficulty" required> <!--Creates a dropdown for difficulty selection-->
+            <option value="">Select difficulty</option> <!--Provides a placeholder option with an empty value-->
+            <option value="easy">Easy</option> <!--Allows the user to select the easy difficulty-->
+            <option value="medium">Medium</option> <!--Allows the user to select the medium difficulty-->
+            <option value="hard">Hard</option> <!--Allows the user to select the hard difficulty-->
         </select>
 
-        <button id="get-question-btn">Get Random Question</button>
+        <button type="submit" id="add-question-btn">Add Question</button> <!--Creates a button to submit the form-->
+    </form> <!--Ends the form-->
 
-        <div id="question-container">
-            <p id="question-text">Click the button to get started!</p>
-        </div>
-
-        <input type="text" id="answer-input" placeholder="Enter your answer">
-
-        <button id="submit-answer-btn">Check Answer</button>
-
-        <p id="answer-feedback"></p>
-    </section>
-
-
+    <p id="add-question-feedback"></p> <!--Initially empty area for displaying success or error messages-->
+</section> <!--Ends the add-question section-->
     
-</main>
+</main> <!--Ends the main content-->
     
 </body>
 </html>
