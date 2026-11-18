@@ -93,13 +93,12 @@ submitAnswerBtn.addEventListener("click", async () =>{
             answerFeedback.style.color = "#4ADE80";
         }
         else{
-            answerFeedback.textContent = "Incorrect! The correct answer is:" + result.answer;
+            answerFeedback.textContent = "Incorrect! The correct answer is: " + result.answer;
             answerFeedback.style.color = "#FB7185";
         }
     }
     catch(error){
         console.error("Error checking answer",error);
-
     }
 });
 

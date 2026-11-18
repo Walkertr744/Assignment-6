@@ -1,202 +1,198 @@
-body {
-    font-family: 'DM Sans', sans-serif;
-    background: #10121b;
-    color: #ffffff;
-    min-height: 100vh;
-    line-height: 1.6;
+body {                                  /* Applies these styles to the entire webpage */
+    font-family: 'DM Sans', sans-serif; /* Uses DM Sans as the main font, with sans-serif as a backup */
+    background: #10121b;              /* Webpage background will be dark navy */
+    color: #ffffff;                   /* Default text color is white */
+    line-height: 1.6;                   /* Vertical spacing between lines of text */
 }
 
 /* Header */
 
-header {
-    text-align: center;
-    padding: 80px 20px 50px;
+header {                                /* Styles the header at the top of the content */
+    text-align: center;                 /* Centers the text horizontally */
+    padding: 80px 20px 50px;            /* Adds 80px top, 20px left/right, and 50px bottom spacing */
 }
 
-header h1 {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin-bottom: 12px;
+header h1 {                             /* Targets the main heading inside the header */
+    font-size: 48px;                    /* Sets font size to 48 pixels */
+    font-weight: 700;                   /* Makes the text BOLD */
+    margin-bottom: 12px;                /* Gives a 12 pixel margin on the bottom */
 }
 
-header p {
-    color: #a8a9be;
-    font-size: 1.1rem;
+header p {                              /* Targets the paragraph elements inside the header */
+    color: #a8a9be;                   /* Styles the text with a light gray / purple text */
+    font-size: 1.1rem;                  /* Makes the font size 1.1 times the root font size */
 }
 
 /* Main content */
 
-main {
-    width: 90%;
-    max-width: 650px;
-    margin: 0 auto;
-    padding-bottom: 80px;
+main {                                  /* Styles the Main Section of the webpage */
+    width: 90%;                         /* Uses 90% of the parent's width */
+    max-width: 650px;                   /* Can be no bigger than 650 pixels */    
+    margin: 0 auto;                     /* Centers the container horizontally */
+    padding-bottom: 80px;               /* Gives the content 80 pixels of padding on bottom */
 }
 
 /* Trivia card */
 
-#trivia-section {
-    background: #1c1e2b;
-    border: 1px solid #323447;
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+#trivia-section {                                   /* Targets the section containing the trivia game */
+    background: #1c1e2b;                          /* Gives the trivia card a dark navy background */
+    border: 1px solid #323447;                    /* Adds a thin solid border around the trivia card */
+    border-radius: 20px;                            /* Rounds the corners of the trivia card by 20 pixels */
+    padding: 35px;                                  /* Adds 35 pixels of space inside the trivia card */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);   /* Adds a soft shadow below the card */
 }
 
-#trivia-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    letter-spacing: -0.5px;
+
+#trivia-section h2 {                   /* Targets the Play Trivia heading */
+    font-size: 1.5rem;                 /* Makes the heading 1.5 times the root font size */
+    margin-bottom: 25px;               /* Adds 25 pixels of space below the heading */
 }
 
 /* Labels */
 
-label {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #c4c5d5;
-    margin-bottom: 10px;
+label {                                /* Targets all label elements on the webpage */
+    display: block;                    /* Places each label on its own line */
+    font-size: 0.9rem;                 /* Makes label text slightly smaller than normal text */
+    font-weight: 600;                  /* Makes the label text semibold */
+    color: #c4c5d5;                  /* Gives the labels a light gray / purple color */
+    margin-bottom: 10px;               /* Adds 10 pixels of space below each label */
 }
 
 /* Input fields */
 
-select,
-input {
-    width: 100%;
-    box-sizing: border-box;
-    background: #252735;
-    color: #ffffff;
-    border: 1px solid #414357;
-    border-radius: 10px;
-    padding: 15px;
-    font-family: inherit;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
+select,input {                                      /* Targets all dropdown menus and input fields */
+    width: 100%;                                    /* Makes the fields fill the width of their container */
+    box-sizing: border-box;                         /* Includes the padding and border in the total width */
+    background: #252735;                          /* Gives the input fields a dark gray background */
+    color: #ffffff;                               /* Makes the text inside the fields white */
+    border: 1px solid #414357;                    /* Adds a thin solid border around the fields */
+    border-radius: 10px;                            /* Rounds the corners of the input fields */
+    padding: 15px;                                  /* Adds 15 pixels of space inside each field */
+    font-family: inherit;                           /* Uses the same font as the parent element */
+    font-size: 1rem;                                /* Sets the font size equal to the root font size */
+    outline: none;                                  /* Removes the browser's default focus outline */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smoothly changes border color and shadow */
 }
 
-select:focus,
-input:focus {
-    border-color: #8b83ff;
-    box-shadow: 0 0 0 3px rgba(139, 131, 255, 0.15);
+select:focus, input:focus {                             /* Targets dropdowns and inputs when they are selected */
+    border-color: #8b83ff;                            /* Changes the border to purple when selected */
+    box-shadow: 0 0 0 3px rgba(139, 131, 255, 0.15);  /* Adds a light purple glow around the box */
 }
 
-input::placeholder {
-    color: #888a9f;
+input::placeholder {                    /* Targets the placeholder text inside the input box */
+    color: #888a9f;                   /* Makes the text a muted grey */
 }
 
 /* Buttons */
 
-button {
-    background: #7770eb;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 22px;
-    font-family: inherit;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
+button {                                            /* Targets all buttons on the webpage */
+    background: #7770eb;                          /* Gives them a purple background */
+    color: white;                                 /* Button text  = white */
+    border: none;                                   /* Removes default button border */
+    border-radius: 10px;                            /* Rounds the corners */
+    padding: 15px 20px;                             /* Adds 15px top/bottom and 20 px left/right */
+    font-family: inherit;                           /* Uses same font as the parent */
+    font-size: 0.95rem;                             /* Button text is slightly smaller than root text */
+    font-weight: 600;                               /* Makes the text somewhat Bold */
+    cursor: pointer;                                /* Changes the cursor to a pointing hand when hovering over the button */
+    transition: background 0.2s, transform 0.2s;    /* Smooth change of color/position */
 }
 
-button:hover {
-    background: #918bff;
-    transform: translateY(-2px);
+button:hover {                          /* Targets Buttons while they are being hovered on */
+    background: #918bff;              /* Changes the background */
+    transform: translateY(-2px);        /* Moves the button upwards by 2px */
 }
 
-button:active {
-    transform: translateY(0);
+button:active {                         /* Targets buttons when actively clicked */
+    transform: translateY(0);           /* Returns to original position */
 }
 
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+button:disabled {                       /* Targets buttons when they are disabled */
+    opacity: 0.5;                       /* Makes them apear slighly faded */
+    cursor: not-allowed;                /* Shows a cursor indicating you cannot use the button */
 }
 
 /* Random question button */
 
-#get-question-btn {
-    width: 100%;
-    margin-top: 20px;
+#get-question-btn {                     /* Targets the #get-question-btn */
+    width: 100%;                        /* Button should fill the width of the parental container */
+    margin-top: 20px;                   /* Adds 20 pixels of space above */
 }
 
 /* Question display */
 
-#question-container {
-    background: #252735;
-    border: 1px solid #414357;
-    border-radius: 14px;
-    padding: 30px;
-    margin: 25px 0;
-    text-align: center;
+#question-container {                   /* Targets the box where the question will apear */
+    background: #252735;              /* Gives the box a dark grey background */
+    border: 1px solid #414357;        /* Thin solid border */
+    border-radius: 15px;                /* Rounds the corners */
+    padding: 30px;                      /* 30 pixels of padding within the box */
+    margin: 25px 0;                     /* 25 pixels top/bottom margine, 0 left/right */
+    text-align: center;                 /* Center the text horizontally */
 }
 
-#question-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.6;
+#question-text {                        /* Targets the trivia question text */
+    font-size: 1.25rem;                 /* Make 1.25 * root size */
+    font-weight: 600;                   /* SemiBold */
+    line-height: 1.6;                   /* Adds a little vertical spacing between lines */
 }
 
 /* Answer section */
 
-#answer-input {
-    margin-bottom: 15px;
+#answer-input {                         /* Targets the asnwer field */
+    margin-bottom: 15px;                /* 15 pixel margin on bottom */
 }
 
-#submit-answer-btn {
-    width: 100%;
+#submit-answer-btn {                    /* Targets the check answer button */
+    width: 100%;                        /* Fill the width of parent container */
 }
 
 /* Feedback */
 
-#answer-feedback {
-    text-align: center;
-    font-weight: 600;
-    margin-top: 20px;
-    min-height: 25px;
+#answer-feedback {                      /* Targets the feedback messages */
+    text-align: center;                 /* Center horizontally */
+    font-weight: 600;                   /* SemiBold */
+    margin-top: 20px;                   /* 20 pixels of margin on top */
+    min-height: 25px;                   /* Make sure 25 pixels of vertical space exists for the feedback */
 }
 
 /* Add Question Section */
 
-#add-question-section {
-    background: #1c1e2b;
-    border: 1px solid #323447;
-    border-radius: 20px;
-    padding: 35px;
-    margin-top: 30px;
+#add-question-section {                 /* Targets the add your own question section */
+    background: #1c1e2b;              /* Gives the section a dark navy background */
+    border: 1px solid #323447;        /* Adds a thin solid border */
+    border-radius: 20px;                /* Round corners */
+    padding: 35px;                      /* 35 pixels of padding inside the section */
+    margin-top: 30px;                   /* 30 pixels of margin on top */
 }
 
-#add-question-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+#add-question-section h2 {              /* Targets the add your own question heading */
+    font-size: 24px;                    /* 24 px font size */
+    margin-bottom: 10px;                /* 10 pixels of margin on bottom */
 }
 
-#add-question-section > p {
-    color: #a8a9be;
-    margin-bottom: 25px;
+#add-question-section > p {             /* Targets the paragraphs within this section */
+    color: #a8a9be;                   /* Gives them a muted gray color */
+    margin-bottom: 25px;                /* 25 pixels of margin on bottom */
 }
 
-#add-question-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+#add-question-form {                    /* Targets the new question form */
+    display: flex;                      /* Uses flexbox to organize its elements */
+    flex-direction: column;             /* Stacks the elements vertically */
+    gap: 12px;                          /* 12 pixels of space between elements */
 }
 
-#add-question-form label {
-    margin-top: 8px;
-    margin-bottom: 0;
+#add-question-form label {              /* Targets the labels inside the form */
+    margin-top: 5px;                    /* Adds 5 px of margin on top */
+    margin-bottom: 0;                   /* 0 pixels of margin on bottom */
 }
 
-#add-question-btn {
-    width: 100%;
-    margin-top: 15px;
+#add-question-btn {                     /* Targets the add question submit button */
+    width: 100%;                        /* Fill parent continer 100% in width */
+    margin-top: 15px;                   /* 15 pixels of margin on top */
 }
 
-#add-question-feedback {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
+#add-question-feedback {                /* Targets the feedback after submitting your new question */
+    text-align: center;                 /* Center horizontally */    
+    margin-top: 20px;                   /* 20 pixels of marign on top */
+    font-weight: 600;                   /* SemiBold */
 }
