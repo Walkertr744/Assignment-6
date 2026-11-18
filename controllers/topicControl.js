@@ -69,6 +69,6 @@ async function addNewQuestion(req,res) {
 
     const updatedQuestions = await addQuestion(topic, question, answer, difficulty);
 
-    res.status(201).json(updatedQuestions);
+    res.status(200).json(updatedQuestions);
 }
 export {getTopics,getQuestions,getRandom,checkAnswer,addNewQuestion};
