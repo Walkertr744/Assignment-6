@@ -4,6 +4,8 @@ Triviabook is a full stack trivia application. Node.js, Express, Postgres and Re
 
 ## Live Website
 
+    https://assignment-6-0h1e.onrender.com/
+    
 ## Database Scheme
 
 Topics
